@@ -1,0 +1,15 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+echo ""
+echo "  🎁 部署生日卡到永久链接"
+echo "  ==========================="
+echo ""
+echo "  需要注册 Surge.sh（免费托管平台）"
+echo "  按提示输入邮箱和密码即可"
+echo ""
+npx surge --project . --domain gift-for-yiran.surge.sh
+echo ""
+echo "  ✅ 部署完成！"
+echo "  链接：https://gift-for-yiran.surge.sh"
+echo "  以后任何时候任何人都能打开"
+echo ""
